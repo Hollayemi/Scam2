@@ -1,25 +1,26 @@
-html {
-    scroll-behavior: smooth;
-  }
+
 *{
     margin:0px;
     padding:0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden !important;
 }
 .topHeader{
-    position:relative;
+    position:fixed;
     background-color: #05081c;
-    height:60px;
-    top:0px;
+    height:70px;
+    top:0;
     width:100%;
     left:0px;
     padding:0px 150px;
     z-index:99999999;
-    transition:5s;
+    transition:1s;
 }
 .topLogoDiv img{
     width:90px;
@@ -40,7 +41,7 @@ nav{
 }
 .linksDiv ul li{
     padding:0px 15px;
-    line-height:60px;
+    line-height:70px;
     text-decoration: none;
     list-style-type: none;
 }
@@ -62,6 +63,7 @@ nav{
 
 /* body */
 main{
+    margin-top:70px;
     position: relative;
     background-image: url('image/bgdScam2.jpg');
     background-size:cover;
@@ -73,7 +75,6 @@ main header{
     background-color: #070707cd;
 }
 .headerDiv{
-    
     display:Flex;
     justify-content: space-between;
     padding:20px 50px;
@@ -84,8 +85,7 @@ main header{
     justify-content: center;
     align-items: center;
 }
-/* note */
-
+/*------note */
 .topAbout h2{
     font-size:34px;
     color:#fff;
@@ -113,7 +113,7 @@ main header{
 .topAbout span a i{
     padding-right:10px;
 }
-.topAbout span a{
+.topAbout span a, .first{
     text-decoration: none;
     color:#fff;
     font-size:20px;
@@ -122,14 +122,25 @@ main header{
     padding:10px 20px;
     border-radius:60px;
     color: rgb(248, 170, 25);
+    transition: .5s;
 }
 .topAbout span .second{
-    border:0px;
+    border:3px solid rgba(0, 0, 0, 0);
     color:#fff;
     background-color: rgb(248, 170, 25);
 }
-
-
+.topAbout span .first:hover{
+    border:3px solid rgba(0, 0, 0, 0);
+    color:#fff;
+    background-color: rgb(248, 170, 25);
+}
+.topAbout span .second:hover{
+    border:0px;
+    color:#fff;
+    border:3px solid rgb(248, 170, 25);
+    color: rgb(248, 170, 25);
+    background-color: transparent;
+}
 
 .formDiv{
     width:40%;
@@ -222,18 +233,34 @@ textarea::placeholder{
 /* table */
 table {
     width:100%;
+    text-align: left;
 }
 table, th, td {
     border: 0px solid black;
     border-collapse: collapse;
+    text-align: left;
 }
 tr{
     width:400px !important;
 }
 th, td {
     padding: 15px;
-    text-align: center;
-    min-width: 100px;
+    text-align: left;
+    color:#fff;
+}
+.tabletext td{
+    padding-top:8px !important;
+}
+.tablesubtext td{
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgb(112, 112, 112);
+}
+.address-hash{
+    text-align:center;
+}
+td a{
+    color:rgb(220, 152, 26);
+    text-decoration: none;
 }
 .AddressDivDiv1{
     display: flex;
@@ -255,9 +282,12 @@ th, td {
 .sm-d1 h4{
     color:rgb(255, 166, 0);
 }
-
-
-
+.myTable{
+    padding:70px 0px;
+    width:100%;
+    margin-left:0px;
+    background-color: rgb(63, 63, 63);
+}
 
 /* footer */
 footer{
@@ -274,6 +304,7 @@ footer{
     color: rgb(211, 205, 205);
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .divFooter div{
     width:350px;
@@ -288,6 +319,7 @@ footer{
 .sc-32-d a{
     text-decoration: none;
     color: rgb(211, 205, 205);
+    
 }
 
 .sc-30-d{
@@ -296,6 +328,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#scrollUp{
+    transition:1.5s !important;
 }
 #scrollUp a{
     position: fixed;

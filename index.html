@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCAMALERT</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -13,7 +14,7 @@
 </head>
     <body>
         <section id="top"></section>
-        <div class="topHeader"  id="topHeader" style="position:relative;">
+        <div class="topHeader"  id="topHeader" style="top:0;">
             <nav>
                 <div class="topLogoDiv">   
                     <img src="image/impersonator-scamc645.png" alt="">
@@ -77,7 +78,6 @@
                                 </div>
 
 
-
                                 <div>
                                     <div>Blockchain Payment Address</div>
                                     <input type="text" placeholder="JHH-232DS-ZAXC2-XCDC-13DQ-ACS">
@@ -112,44 +112,106 @@
 
 
             <div class="AddressDiv opp">
-                <h2>Address Check</h2>
+                <h2>Latest Transactions</h2>
             </div>
 
 
-            <div class="AddressDiv">
-                <h2>Address Check</h2>
+            <div class="AddressDiv tablesec">
+                <h2>Top Scammers</h2>
                 <p>The top 10 most successful currently active scammers. Listed by total lifetime
                 earnings in USD based on prices at the moment of transaction.
                 </p>
 
-                <div class="inputSearch">
-                    <table>
-                        <tr>
-                            <td>MALWARE</td>
-                            <td>bc1qqcs77r7g08tqwurs7mms5wp346h75qhjx0c5zt</td> 
-                            <td>$4,601,554</td>
-                        </tr>
-                        <tr>
-                            <td>MALWARE</td>
-                            <td>bc1qqcs77r7g08tqwurs7mms5wp346h75qhjx0c5zt</td> 
-                            <td>$4,601,554</td>
-                        </tr>
-                        <tr>
-                            <td>MALWARE</td>
-                            <td>bc1qqcs77r7g08tqwurs7mms5wp346h75qhjx0c5zt</td> 
-                            <td>$4,601,554</td>
-                        </tr>
-                        <tr>
-                            <td>MALWARE</td>
-                            <td>bc1qqcs77r7g08tqwurs7mms5wp346h75qhjx0c5zt</td> 
-                            <td>$4,601,554</td>
-                        </tr>
+                <div class="inputSearch myTable">
+                    <table id="topten">
+                        <tbody>
+                            <tr class="tabletext">
+                                <td class="scam-type">Malware</td>
+                                <td><a href="/scam/bc1qqcs77r7g08tqwurs7mms5wp346h75qhjx0c5zt" class="address-hash"><span class="d-none d-md-block">bc1qqcs77r7g08tqwurs7mms5wp346h75qhjx0c5zt</span><span class="d-none d-sm-block d-md-none">bc1qqcs77r7g...h75qhjx0c5zt</span><span class="d-sm-none">bc1qq...0c5zt</span></a></td>
+                                <td class="latest-transaction-value">$4,601,554</td>
+                            </tr>
+                            <tr class="tablesubtext">
+                                <td colspan="3">1. Another very successful malware scam </td>
+                            </tr>
+                            <tr class="tabletext">
+                                <td class="scam-type">Malware</td>
+                                <td><a href="/scam/bc1q39axrttxmu544gaz82pa8zlyj4dnsdzlzleya8" class="address-hash"><span class="d-none d-md-block">bc1q39axrttxmu544gaz82pa8zlyj4dnsdzlzleya8</span><span class="d-none d-sm-block d-md-none">bc1q39axrttx...dnsdzlzleya8</span><span class="d-sm-none">bc1q3...leya8</span></a></td>
+                                <td class="latest-transaction-value">$2,799,128</td>
+                            </tr>
+                            <tr class="tablesubtext">
+                                <td colspan="3">2. An address used by malware that sneakily changes a payment address.</td>
+                            </tr>
+                            <tr class="tabletext">
+                                <td class="scam-type">Tumbler</td>
+                                <td><a href="/scam/1CoiNMixqJdctqazGsTvDcAygqHPUvmRo8" class="address-hash"><span class="d-none d-md-block">1CoiNMixqJdctqazGsTvDcAygqHPUvmRo8</span><span class="d-none d-sm-block d-md-none">1CoiNMixqJdc...AygqHPUvmRo8</span><span class="d-sm-none">1CoiN...vmRo8</span></a></td>
+                                <td class="latest-transaction-value">$2,494,503</td>
+                            </tr>
+                            <tr class="tablesubtext">
+                                <td colspan="3">3. A fake tumbler that sends your hard earned bitcoin to several well known exchanges</td>
+                            </tr>
+                            <tr class="tabletext">
+                                <td class="scam-type">Fake Investment</td>
+                                <td><a href="/scam/19k5ey65q3g44GTG3ZaKYjPEkdSshq1vjg" class="address-hash"><span class="d-none d-md-block">19k5ey65q3g44GTG3ZaKYjPEkdSshq1vjg</span><span class="d-none d-sm-block d-md-none">19k5ey65q3g4...PEkdSshq1vjg</span><span class="d-sm-none">19k5e...q1vjg</span></a></td>
+                                <td class="latest-transaction-value">$2,096,767</td>
+                            </tr>
+                            <tr class="tablesubtext">
+                                <td colspan="3">4. A fake credit card provider with a spelling error riddled website</td>
+                            </tr>
+                            <tr class="tabletext">
+                                <td class="scam-type">Fake Investment</td>
+                                <td><a href="/scam/1HepvEVnkMNCJ5iD7RHJVyk1ZiXzUM9PcQ" class="address-hash"><span class="d-none d-md-block">1HepvEVnkMNCJ5iD7RHJVyk1ZiXzUM9PcQ</span><span class="d-none d-sm-block d-md-none">1HepvEVnkMNC...k1ZiXzUM9PcQ</span><span class="d-sm-none">1Hepv...M9PcQ</span></a></td>
+                                <td class="latest-transaction-value">$1,347,410</td>
+                            </tr>
+                            <tr class="tablesubtext">
+                                <td colspan="3">5. </td>
+                            </tr>
+                            <tr class="tabletext">
+                                <td class="scam-type">Fake Investment</td>
+                                <td><a href="/scam/1MHwLU6hqHi7HcZENp4XsZQkYb2nNWGBLf" class="address-hash"><span class="d-none d-md-block">1MHwLU6hqHi7HcZENp4XsZQkYb2nNWGBLf</span><span class="d-none d-sm-block d-md-none">1MHwLU6hqHi7...QkYb2nNWGBLf</span><span class="d-sm-none">1MHwL...WGBLf</span></a></td>
+                                <td class="latest-transaction-value">$1,338,847</td>
+                            </tr>
+                            <tr class="tablesubtext">
+                                <td colspan="3">6. A fake investment site offering 60% daily returns and claims comply with IRFB.</td>
+                            </tr>
+                            <tr class="tabletext">
+                                <td class="scam-type">Malware</td>
+                                <td><a href="/scam/bc1qrwhmhlrj63hetznl984d9zgvh5q428j28klrlt" class="address-hash"><span class="d-none d-md-block">bc1qrwhmhlrj63hetznl984d9zgvh5q428j28klrlt</span><span class="d-none d-sm-block d-md-none">bc1qrwhmhlrj...q428j28klrlt</span><span class="d-sm-none">bc1qr...klrlt</span></a></td>
+                                <td class="latest-transaction-value">$1,297,208</td>
+                            </tr>
+                            <tr class="tablesubtext">
+                                <td colspan="3">7. </td>
+                            </tr>
+                            <tr class="tabletext">
+                                <td class="scam-type">Terrorism</td>
+                                <td><a href="/scam/1LaNXgq2ctDEa4fTha6PTo8sucqzieQctq" class="address-hash"><span class="d-none d-md-block">1LaNXgq2ctDEa4fTha6PTo8sucqzieQctq</span><span class="d-none d-sm-block d-md-none">1LaNXgq2ctDE...8sucqzieQctq</span><span class="d-sm-none">1LaNX...eQctq</span></a></td>
+                                <td class="latest-transaction-value">$953,782</td>
+                            </tr>
+                            <tr class="tablesubtext">
+                                <td colspan="3">8. This address has been linked to Hamas</td>
+                            </tr>
+                            <tr class="tabletext">
+                                <td class="scam-type">Fake Investment</td>
+                                <td><a href="/scam/1PVQNKnsERTx4VGbKJQJdHYDhKLCnpppaR" class="address-hash"><span class="d-none d-md-block">1PVQNKnsERTx4VGbKJQJdHYDhKLCnpppaR</span><span class="d-none d-sm-block d-md-none">1PVQNKnsERTx...YDhKLCnpppaR</span><span class="d-sm-none">1PVQN...pppaR</span></a></td>
+                                <td class="latest-transaction-value">$809,916</td>
+                            </tr>
+                            <tr class="tablesubtext">
+                                <td colspan="3">9. Aside from depositing money on a fake credit card, there is not much to do on the InstaWalletPay website</td>
+                            </tr>
+                            <tr class="tabletext">
+                                <td class="scam-type">Fake Investment</td>
+                                <td><a href="/scam/1FSghaBMNHD11uKv8mQU32v6GkcYudoJzm" class="address-hash"><span class="d-none d-md-block">1FSghaBMNHD11uKv8mQU32v6GkcYudoJzm</span><span class="d-none d-sm-block d-md-none">1FSghaBMNHD1...v6GkcYudoJzm</span><span class="d-sm-none">1FSgh...doJzm</span></a></td>
+                                <td class="latest-transaction-value">$762,085</td>
+                            </tr>
+                            <tr class="tablesubtext">
+                                <td colspan="3">10. TradersAccolade offers up to 40% ROI in 7 days and is part of a series of scam websites</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
 
             <div class="AddressDiv opp sm-d1">
-                <h2>Address Check</h2>
+                <h2>Common Scams</h2>
 
                 <div class="AddressDivDiv1">
                     <div>
@@ -278,34 +340,6 @@
              <a href="#top"><i class="fa fa-caret-up"></i></i></a>
         </div>
 
-        <script>
-
-            var prevScrollpos = window.pageYOffset;
-            console.log(prevScrollpos)
-            window.onscroll= function(){
-                var currentScrollPos = window.pageYOffset;
-                if(prevScrollpos > currentScrollPos){
-                    document.getElementById("topHeader").style.position = "fixed";
-                    document.getElementById("scrollUp").style.display = "block";
-                }else{
-                    document.getElementById("topHeader").style.position = "relative";
-                    document.getElementById("scrollUp").style.display = "none";
-                }
-
-
-                if(currentScrollPos > 300){
-                
-                    document.getElementById("scrollUp").style.right = "30px";
-                    document.getElementById("scrollUp").style.opacity = "1";
-                    
-                }else{
-                    document.getElementById("scrollUp").style.opacity = "0";
-                    document.getElementById("scrollUp").style.right = "-10px";
-                }
-                prevScrollpos=currentScrollPos;
-
-            }
-        </script>
-
+        <script src="index.js"></script>
     </body>
 </html>

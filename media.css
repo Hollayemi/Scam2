@@ -1,0 +1,69 @@
+@media screen  and (max-width:1570px){.d-md-block{display:none;}.formDiv{width:50%;}}
+@media screen  and (max-width:1267px){.topHeader{padding:0px 50px;}}
+@media screen  and (max-width:1057px){
+    .tablesec{
+        padding:0px 10%;
+    }
+    .linksDiv .ul1{
+        display: block;
+        position:fixed;
+        overflow-y:auto;
+        top:0px;
+        left:0%;
+        margin-top:0px;
+        background-color: rgb(1, 29, 49);
+        width:80%;
+        height:100%;
+        transition:.5s;
+    }
+    .barsIon{
+        transition:.5s;
+        display: block;
+        font-size:30px !important;
+        right:50px !important;
+        margin-top:-10px ;
+        position: absolute;
+        color:#fff;
+    }
+    .headerDiv{
+        display: block;
+    }
+    .topAbout{
+        width:100%;
+    }
+    .formDiv{
+        width:100%
+    }
+
+    .AddressDiv{
+        padding:70px 10%;
+    }
+}
+
+@media screen  and (max-width:750px){.d-md-none{display:none;}.topHeader{padding:0px 1git0px;}.barsIon{margin-right:-10px;}}
+@media screen  and (max-width:550px){
+    .headerDiv{padding:50px 20px;
+    }
+    .topAbout h2{font-size:24px;}
+    .topAbout h3{font-size:20px;}
+    .topAbout p{font-size:17px;}
+    .topAbout div{
+        margin-left:10px;
+    }
+    .topAbout span a, .first{
+        font-size:20px;
+        background-color: transparent;
+        border:3px solid rgb(248, 170, 25);
+        padding:5px 10px;margin-right:20px;
+    }
+    .topLogoDiv img{
+        width:60px;
+        height:50px;
+        line-height:70px;
+        padding-top:10px;
+    }
+}
+
+@media screen  and (max-width:380px){.tablesec{padding:20px 5px;}
+@media screen  and (max-width:374px){.topAbout span{display:block;}
+@media screen  and (max-width:330px){.tablesec{overflow-y: auto;}.tablesec{padding:20px 0px; width:100%;}
