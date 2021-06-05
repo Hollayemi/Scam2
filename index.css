@@ -161,6 +161,30 @@ main header{
     font-size:16px;
     font-weight: bold;
 }
+.submitSide{
+    width:100%;
+    display:flex;
+    margin-top:40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:70px;
+}
+.submitSide h3{
+    font-weight:500;
+}
+.submitSide h3 i{
+    background-color: #000;
+    color:#fff;
+    padding:5px 10px;
+    border-radius:50px;
+}   
+.bottomBase{
+    position: relative;
+    margin-bottom:-130px;
+    color: rgb(242, 184, 76);
+    font-size:14px;
+    font-weight: 200;
+}
 ::placeholder{
     color: rgb(201, 199, 199);
 }
@@ -344,5 +368,48 @@ footer{
     text-decoration: none;
     scroll-behavior: smooth;
     color:rgb(255, 166, 0);
+    transition:.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* scamPrevention */
+
+.scamPrevention .topic{
+    font-size:20px;
+    border:1px solid rgb(216, 216, 216);
+    font-weight: 400;
+    text-align: left;
+    height:50px;
+    display: flex;
+    align-items: center;
+    padding-left:40px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.scamPrevention .topic:hover{
+    border:1px solid rgb(255, 166, 0);
+    color:rgb(255, 166, 0);
+}
+.scamPrevention p{
+    margin-top:-60px;
+    margin-bottom:50px;
+    /* padding-top:40px; */
+    border:1px solid #eee;
+    height:0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
     transition:.5s;
 }

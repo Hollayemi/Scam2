@@ -25,8 +25,6 @@ window.onscroll= function(){
 
 
     if(prevScrollpos > currentScrollPos && currentScrollPos > parseInt('300')){
-        console.log(prevScrollpos);
-        // document.getElementById("scrollUp").style.display = "block";
         document.getElementById("scrollUp").style.right = "30px";
         document.getElementById("scrollUp").style.opacity = "1";
         
@@ -35,5 +33,18 @@ window.onscroll= function(){
         document.getElementById("scrollUp").style.right = "-10px";
     }
     prevScrollpos=currentScrollPos;
+}
+
+function toggle(element){
+    var id = element.id + "-p"
+    if(document.getElementById(id).style.height != "260px"){
+        document.getElementById(id).style.height="260px"
+        document.getElementById(id).style.paddingTop="10px"
+        document.getElementById(element.id).style.color="rgb(255, 166, 0)"
+    }else{
+        document.getElementById(id).style.height="0px"
+        document.getElementById(id).style.paddingTop="0px"
+    }
+    
 
 }
